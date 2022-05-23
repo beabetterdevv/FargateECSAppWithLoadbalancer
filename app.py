@@ -5,10 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    time.sleep(180)
     return render_template('index.html')
 
 @app.route('/app')
 def blog():
+    time.sleep(180)
     return "Hello, from App!"
 
 
